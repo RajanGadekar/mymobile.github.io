@@ -1,0 +1,40 @@
+<html>
+<form>
+	<label>Product Name</label>
+	<input type="text" name="" id='Pro' required><br>
+	<label>Quantity</label>
+	<input type="number" name="" id='Quan'><br>
+	<label>Rate</label>
+	<input type="text" name="" id='Rate'>
+	<button type="button" onclick="myFunction()">Save</button>
+</form>
+ <table id="myTableData">
+  <tr>
+  	<th>Sr.No</th>
+    <th>Product</th>
+    <th>Quantity</th>
+    <th>Rate</th>
+    <th>Total</th>
+</tr>
+<body>
+	<script type="text/javascript">
+		var i = 1;
+		function myFunction(){
+			var Product = document.getElementById('Pro');
+			var Quantity = document.getElementById('Quan');
+			var Rate = document.getElementById('Rate');
+			var table = document.getElementById("myTableData");
+			var total = Quantity.value*Rate.value;
+
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+               
+            row.insertCell(0).innerHTML=i++;
+            row.insertCell(1).innerHTML=Product.value;
+            row.insertCell(2).innerHTML=Quantity.value;
+            row.insertCell(3).innerHTML=Rate.value;
+            row.insertCell(4).innerHTML=total;
+		}
+	</script>
+     </body></table>
+</html>

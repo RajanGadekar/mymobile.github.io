@@ -1,0 +1,83 @@
+<style>
+        @media(max-width:677px)
+        #a,#b{
+            display:none;
+        }
+         
+        #u:hover{
+           transform: scale(1.1);
+           transition-duration: 1s;
+       }
+        #i:hover{
+           transform: scale(1.1);
+           transition-duration: 1s;
+       }
+        #m:hover{
+           transform: scale(1.1);
+           transition-duration: 1s;
+       }
+        #s:hover{
+           transform: scale(1.1);
+           transition-duration: 1s;
+       }
+        #ca:hover{
+           transform: scale(1.1);
+           transition-duration: 1s;
+       }
+        #x:hover{
+           transform: scale(1.1);
+           transition-duration: 1s;
+       }
+       #ins:hover{
+           color: purple;
+       }
+       #twi:hover{
+           color: dodgerblue;
+       }
+       #sn:hover{
+           color: yellow;
+       }
+       #go:hover{
+           color: red;
+       }
+       #wt:hover{
+           color: limegreen;
+       }
+       #sk:hover{
+           color: skyblue;
+       }
+       .box{
+			width: 300px;
+			height: 200px;
+			
+		}
+.row {
+   display: flex;
+   overflow: hidden;
+  }
+
+.imagegroup {
+   display: flex;
+   width: 100%;
+  }
+
+.imagegroup img{
+  flex-shrink: 0;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.imagegroup {
+   animation: travel 10s ease-in-out infinite;
+  }
+
+@keyframes travel {
+   0%, 100% {
+      transform: translate3d(0,0,0);
+    }
+   50% {
+      transform: translate3d(-100%,0,0);
+    }
+ }
+
+</style>

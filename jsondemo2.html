@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+		
+		
+		font-family: sans-serif;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		overflow: hidden
+	}
+	#particles-js
+	{
+		height: 100%
+	}
+	.loginBox
+	{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 350px;
+		min-height: 200px;
+		border-radius: 10px;
+		padding: 40px;
+		box-sizing: border-box
+	}
+	.user
+	{
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 20px
+	}
+	.loginBox input
+	{
+		width: 100%;
+		margin-bottom: 20px
+	}
+	
+</style>
+</head>
+<body>
+<div class="loginBox bg-info border shadow text-center"> 
+	<img class="user" src="qqaz.jpg" height="100px" width="100px">
+        <h2>Sign in</h2>
+            <div class="inputBox"> 
+            	<input id="uname" class="form-control shadow" type="text" placeholder="Email address"> 
+            	<input id="pass" type="password" class="form-control shadow" placeholder="Password">
+            </div> 
+        <button class="btn btn-danger mx-auto d-block" onclick="myFunction()" >sign in</button>          
+</div>
+    <script type="text/javascript">
+
+	var s={
+		"user":[
+		{
+			'name':'Rajan',
+			'uname':'raj@gmail.com',
+			'pass':6611,
+		},
+		{
+			'name':'Shubham',
+			'uname':'shubm@gmail.com',
+			'pass':1166,
+		},
+		{
+			'name':'Pratik',
+			'uname':'prat@gmail.com',
+			'pass':999,
+		},
+		{
+	        'name':'akshay',
+			'uname':'aksh@gmail.com',
+			'pass':3453,
+		},
+		{
+			'name':'sachin',
+			'uname':'sachin@gmail.com',
+			'pass':6767,
+		},
+		{
+		 'name':'Yash',
+			'uname':'yashu@gmail.com',
+			'pass':9090,
+		},
+		
+		
+
+		]
+		};
+function myFunction() {
+	
+var uname1 = document.getElementById("uname").value;
+var pass1 = document.getElementById("pass").value;
+for(var i=0;i<s.user.length;i++){
+	if(uname1==s.user[i]['uname'] && pass1==s.user[i]['pass'])
+	{
+		var name1=s.user[i]['name'];
+    sessionStorage.setItem("name",name1);
+    window.location= "d2.html";
+	}
+    
+	}
+ }
+	</script>
+  </body>
+  </html>

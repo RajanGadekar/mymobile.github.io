@@ -1,0 +1,66 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+            <script src="https://kit.fontawesome.com/059e114a0c.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="cdn/jquery-3.6.0.js"></script>
+     <script type="text/javascript" src="cdn/jquery-3.6.0.min.js"></script>
+     <script type="text/javascript" src="cdn/jquery-3.6.0.slim.js"></script>
+     <script type="text/javascript" src="cdn/jquery-3.6.0.slim.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+    
+</style>
+    <body>
+    <div class="container-fluid">
+    <div class="row" id="add">
+              
+    </div>    
+    </div>
+        <script type='text/javascript'>
+        var a = {
+            'product':[
+            {
+                'iimg':"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lamborghini.com%2Fen-en%2Fmodels&psig=AOvVaw1sbTTxtVD4WWXSJm8h1zUA&ust=1651952637918000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIimsabRy_cCFQAAAAAdAAAAABAD",
+                'nname':'car',
+                'pprice':'20000',
+                'dprice':'3000'
+            },
+            {
+                'iimg':"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lamborghini.com%2Fen-en%2Fmodels&psig=AOvVaw1sbTTxtVD4WWXSJm8h1zUA&ust=1651952637918000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIimsabRy_cCFQAAAAAdAAAAABAD",
+                'nname':'car',
+                'pprice':'20000',
+                'dprice':'3000'
+            },
+                {
+                'iimg':"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lamborghini.com%2Fen-en%2Fmodels&psig=AOvVaw1sbTTxtVD4WWXSJm8h1zUA&ust=1651952637918000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIimsabRy_cCFQAAAAAdAAAAABAD",
+                'nname':'car',
+                'pprice':'20000',
+                'dprice':'3000'
+            },
+                {
+                'iimg':"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lamborghini.com%2Fen-en%2Fmodels&psig=AOvVaw1sbTTxtVD4WWXSJm8h1zUA&ust=1651952637918000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIimsabRy_cCFQAAAAAdAAAAABAD",
+                'nname':'car',
+                'pprice':'20000',
+                'dprice':'3000'
+            }
+            ]
+        }
+        for(var i=0;i<=product.lenght;i++){
+            var data="<div class='col-md-3'><div class='card'><div class='card-body'><img id='img1' class='img' src=''+s.product[i]['iimg']+' "></div><div class='card-footer'><p id="heading">'+s.product[i]['nname']+'</p><span id='old_price'>'+s.product[i]['pprice']+'</span><span id='current_price'>'+s.product[i]['dprice']+'</span></div></div></div>";
+            $('#add').append(data);
+        }
+        </script>
+        
+    </body>
+</html>
